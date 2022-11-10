@@ -40,6 +40,7 @@ dependencies {
 	implementation("com.google.protobuf:protobuf-java-util:$PROTOBUF_JAVA_UTIL_VERSION")
 	implementation("com.google.protobuf:protobuf-kotlin:$PROTOBUF_KOTLIN_VERSION")
 
+	testImplementation("io.mockk:mockk:1.12.0")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
