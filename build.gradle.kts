@@ -1,3 +1,4 @@
+import com.google.protobuf.gradle.id
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 val GRPC_VERSION: String = "3.19.4"
@@ -59,6 +60,13 @@ protobuf {
 		artifact = "com.google.protobuf:protoc:$GRPC_VERSION"
 	}
 
+	generateProtoTasks {
+		all().forEach {
+			it.builtins {
+				id("kotlin")
+			}
+		}
+	}
 	generatedFilesBaseDir = "$projectDir/src/generated"
 }
 
