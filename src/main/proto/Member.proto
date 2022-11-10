@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_outer_classname = "MemberProto";
+
+message Member {
+  string id = 1;
+  string nickname = 2;
+  RestaurantList foodList = 3;
+}
+
+message RestaurantList {
+  repeated string food = 1;
+}

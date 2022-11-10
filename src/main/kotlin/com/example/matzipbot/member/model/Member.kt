@@ -1,4 +1,8 @@
 package com.example.matzipbot.member.model
 
-class Member {
+class Member(
+    val id: String,
+    val nickname: String
+) {
+    var foodList = mutableListOf<String>()
 }
