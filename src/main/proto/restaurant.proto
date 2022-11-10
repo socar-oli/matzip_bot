@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+message restaurantRequest {
+  string name = 1;
+  string category = 2;
+  string location = 3;
+  string link = 4;
+}
+
+message restaurantResponse {
+  string name = 1;
+  string category = 2;
+  float total_rating = 3;
+  float price_rating = 4;
+  int32 numberOfEvaluationStaff = 5;
+  string location = 6;
+  string link = 7;
+}
+
+

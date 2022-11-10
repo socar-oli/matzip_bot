@@ -5,6 +5,8 @@ class Restaurant(
     val category: Category,
     var total_rating: Float = 0.0f,
     var price_rating: Float = 0.0f,
-    var location: String,
-    var link: String
+    var numberOfEvaluationStaff: Int = 0,
+    val location: String,
+    val link: String
 )
+
